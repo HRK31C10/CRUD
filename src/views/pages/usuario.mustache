@@ -1,7 +1,7 @@
 {{>partials/header}}
 
 
-<a href="">Adicionar Usuário</a>
+<a href="/cadastrar">Adicionar Usuário</a>
 
 <table border="1" width="100%">
     <tr>
@@ -10,6 +10,20 @@
         <th>EMAIL</th>
         <th>AÇÕES</th>
     </tr>
+
+    {{#users}}
+
+    <tr>
+            <td>{{id}}</td>
+            <td>{{name}}</td>
+            <td>{{email}}</td>
+        <td>
+            <a href="/editar/{{id}}">[ Editar ]</a>
+            <a href="/excluir/{{id}}">[ Excluir ]</a>
+        </td>
+    </tr>
+
+    {{/users}}
 
 </table>
 

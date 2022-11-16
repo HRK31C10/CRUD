@@ -12,7 +12,7 @@ export const Usuario = sequelize.define<UsuarioInstance>("Usuario,",{
         primaryKey:true,
         type: DataTypes.INTEGER
     },
-    nome:{
+    name:{
         type:DataTypes.STRING
     },
     email:{
