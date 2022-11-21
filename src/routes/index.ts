@@ -14,6 +14,10 @@ router.get('/cadastrar',usuarioController.link)
 
 router.post('/cadastrar', usuarioController.cadastroUsuario)
 
-router.get('/editar/:id'), usuarioController.editaUsuario
+router.get('/editar/:id', usuarioController.editaUsuario)
+
+router.post('/editar/:id', usuarioController.atualizaUsuario)
+
+router.get('/excluir/:id',usuarioController.deletaUsuario)
 
 export default router
